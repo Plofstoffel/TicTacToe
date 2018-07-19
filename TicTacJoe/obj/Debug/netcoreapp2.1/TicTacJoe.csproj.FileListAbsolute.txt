@@ -1,0 +1,12 @@
+C:\Development\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.1\TicTacJoe.deps.json
+C:\Development\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.1\TicTacJoe.dll
+C:\Development\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.1\TicTacJoe.pdb
+C:\Development\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.1\TicTacToe.dll
+C:\Development\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.1\TicTacToe.pdb
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.csprojAssemblyReference.cache
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.csproj.CoreCompileInputs.cache
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.AssemblyInfoInputs.cache
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.AssemblyInfo.cs
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.csproj.CopyComplete
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.dll
+C:\Development\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.1\TicTacJoe.pdb

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{E7A30447-4C35-4ABD-AA9E-8B3FA5A03398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacTests", "TicTacTests\TicTacTests.csproj", "{62E74F03-8D57-4DE2-B05A-0129A5EB2AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacJoe", "TicTacJoe\TicTacJoe.csproj", "{26634784-8671-4986-A747-7CD8AAE1627F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A30447-4C35-4ABD-AA9E-8B3FA5A03398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A30447-4C35-4ABD-AA9E-8B3FA5A03398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A30447-4C35-4ABD-AA9E-8B3FA5A03398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A30447-4C35-4ABD-AA9E-8B3FA5A03398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E74F03-8D57-4DE2-B05A-0129A5EB2AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E74F03-8D57-4DE2-B05A-0129A5EB2AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E74F03-8D57-4DE2-B05A-0129A5EB2AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E74F03-8D57-4DE2-B05A-0129A5EB2AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26634784-8671-4986-A747-7CD8AAE1627F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26634784-8671-4986-A747-7CD8AAE1627F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26634784-8671-4986-A747-7CD8AAE1627F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26634784-8671-4986-A747-7CD8AAE1627F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4739C295-9C70-4E3B-BBBD-31A215771C53}
+	EndGlobalSection
+EndGlobal
