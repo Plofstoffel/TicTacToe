@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Play";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 text-center header">
+            <h1> Play Tic-Tac-Toe</h1>
+            <button class="btn btn-primary playAgain" onclick="ticTacToe.clearBoard()">Start Game</button>
+        </div>
+        <div id="playingLabel" class="col-xs-12 text-center">
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="messageTitle" class="modal-title">Game Results</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="gameResults"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="row text-center">
+        <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="ticTacToe.clicked('0')">
+            <span class="0"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('1')">
+            <span class="1"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('2')">
+            <span class="2"></span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="ticTacToe.clicked('3')">
+            <span class="3"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('4')">
+            <span class="4"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('5')">
+            <span class="5"></span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="ticTacToe.clicked('6')">
+            <span class="6"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('7')">
+            <span class="7"></span>
+        </div>
+        <div class="col-md-2 col-xs-4 square" onclick="ticTacToe.clicked('8')">
+            <span class="8"></span>
+        </div>
+    </div>
+    <input type="hidden" id="boardPlaceholder" />
+</div>

@@ -1,0 +1,15 @@
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.deps.json
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.runtimeconfig.json
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.runtimeconfig.dev.json
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.dll
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.pdb
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.csprojAssemblyReference.cache
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.csproj.CoreCompileInputs.cache
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.AssemblyInfoInputs.cache
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.AssemblyInfo.cs
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.dll
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.pdb
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacToe.dll
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacToe.pdb
+C:\Repos\TicTacToe\TicTacApi\obj\Debug\netcoreapp2.0\TicTacApi.csproj.CopyComplete
+C:\Repos\TicTacToe\TicTacApi\bin\Debug\netcoreapp2.0\TicTacApi.xml

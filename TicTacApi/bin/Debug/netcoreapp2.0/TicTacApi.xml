@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicTacApi</name>
+    </assembly>
+    <members>
+        <member name="M:TicTacApi.Controllers.TicTacToeController.StartGame">
+            <summary>
+            Starts a new game.
+            </summary>
+            <response code="200">Game Created</response>
+            <response code="500">Oops! Skynet is taking over!!!</response>
+        </member>
+        <member name="M:TicTacApi.Controllers.TicTacToeController.Play(TicTacApi.Controllers.PlayObject)">
+            <summary>
+            Make a Move!
+            </summary>       
+            <response code="200">Move made</response>
+            <response code="404">No Current Game</response>
+            <response code="500">Oops! Skynet is taking over!!!</response>
+        </member>
+    </members>
+</doc>

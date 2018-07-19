@@ -1,0 +1,12 @@
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.csprojAssemblyReference.cache
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.csproj.CoreCompileInputs.cache
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.AssemblyInfoInputs.cache
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.AssemblyInfo.cs
+C:\Repos\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.0\TicTacJoe.deps.json
+C:\Repos\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.0\TicTacJoe.dll
+C:\Repos\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.0\TicTacJoe.pdb
+C:\Repos\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.0\TicTacToe.dll
+C:\Repos\TicTacToe\TicTacJoe\bin\Debug\netcoreapp2.0\TicTacToe.pdb
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.csproj.CopyComplete
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.dll
+C:\Repos\TicTacToe\TicTacJoe\obj\Debug\netcoreapp2.0\TicTacJoe.pdb

@@ -40,7 +40,7 @@ namespace TicTacToe
         bool PlaceMarker(Marker marker, int space);
 
         /// <summary>
-        /// Helper tp clone the board.
+        /// Helper to clone the board.
         /// </summary>
         /// <returns></returns>
         IBoard Clone();
