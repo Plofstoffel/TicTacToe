@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Diagnostics;
 using TicTacJoe.Engine;
 using TicTacToe;
 using TicTacToe.Enums;
@@ -15,22 +16,30 @@ namespace TicTacTests
             GameState state = GameState.Playing;
 
             var wallE = new Wall_E_Engine();
-            int moves = 0;
+            int moves = 1;
+            Marker marker = Marker.X;
             //Play the first row
-            state = gameBoard.Play(new Space { Marker = Marker.X, Number = moves });
+            state = gameBoard.Play(new Space { Marker = marker, Number = moves });
+            marker = SwapPlayer(marker);
             while (state == GameState.Playing && moves < 9)
             {
                 moves++;
-                Space aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove.Number });
+                Space aIMove = wallE.GetNextMove(gameBoard, marker);
+                state = gameBoard.Play(new Space { Marker = marker, Number = aIMove.Number });
                 while (state == GameState.InvalidMove)
                 {
-                    aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                    state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove.Number });
-                }                
+                    aIMove = wallE.GetNextMove(gameBoard, marker);
+                    state = gameBoard.Play(new Space { Marker = marker, Number = aIMove.Number });
+                }
+                marker = SwapPlayer(marker);
             }
+            Debug.WriteLine($"Game result of {nameof(state)} umber of moves {moves}.");
+            Assert.IsTrue(state == GameState.Winner || state != GameState.Tie);
+        }
 
-            Assert.IsTrue(state != GameState.InvalidMove && state != GameState.Playing);
+        private Marker SwapPlayer(Marker marker)
+        {
+            return marker == Marker.X ? Marker.O : Marker.X;
         }
     }
 }
