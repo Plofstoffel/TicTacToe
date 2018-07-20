@@ -21,12 +21,12 @@ namespace TicTacTests
             while (state == GameState.Playing && moves < 9)
             {
                 moves++;
-                int aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove });
+                Space aIMove = wallE.GetNextMove(gameBoard, Marker.O);
+                state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove.Number });
                 while (state == GameState.InvalidMove)
                 {
                     aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                    state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove });
+                    state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove.Number });
                 }                
             }
 

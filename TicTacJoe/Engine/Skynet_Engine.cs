@@ -15,9 +15,9 @@ namespace TicTacJoe.Engine
         /// <param name="boardState"></param>
         /// <param name="marker"></param>
         /// <returns></returns>
-        public int GetNextMove(Board boardState, Marker marker)
+        public Space GetNextMove(Board boardState, Marker marker)
         {
-            return -1;
+            return new Space { Marker = marker, Number = 0 };
         }
 
         /// <summary>

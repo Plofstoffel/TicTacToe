@@ -5,6 +5,6 @@ namespace TicTacJoe.Engine
 {
     interface IEngine
     {
-        int GetNextMove(Board boardState, Marker marker);
+        Space GetNextMove(Board boardState, Marker marker);
     }
 }

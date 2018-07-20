@@ -22,16 +22,11 @@ namespace TicTacJoe.Engine
     /// </summary>
     public class Wall_E_Engine : IEngine
     {
-        public int GetNextMove(Board boardState, Marker marker)
+        public Space GetNextMove(Board boardState, Marker marker)
         {
-            int[] spacesLeft = new int[boardState.Spaces.Count(x => x.Marker == Marker.Empty)];
+            Random random = new Random();
+            return boardState.Spaces.Where(x => x.Marker == Marker.Empty).Skip(random.Next(boardState.Spaces.Count(x => x.Marker == Marker.Empty) - 1)).Take(1).FirstOrDefault();
 
-            for (int i = 0; i < boardState.Spaces.Count(x => x.Marker == Marker.Empty); i++)
-            {
-                spacesLeft[i] = boardState.Spaces.ToList().IndexOf(boardState.Spaces.Where(x => x.Marker == Marker.Empty).ToArray()[i]);
-            }
-            Random random = new Random();            
-            return spacesLeft[random.Next(spacesLeft.Length)];
         }
     }
 }
