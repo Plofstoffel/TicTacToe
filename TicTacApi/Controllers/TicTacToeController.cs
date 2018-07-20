@@ -57,7 +57,7 @@ namespace TicTacApi.Controllers
                 }
                 else
                 {
-                    return Ok(gameBoard.Play((Marker)playObject.marker, playObject.position));
+                    return Ok(gameBoard.Play(new Space { Marker = (Marker)playObject.marker, Number = playObject.position }));
                 }
             }
             catch (Exception)

@@ -38,6 +38,7 @@
     play: function (board, marker, position) {        
         var playObject = {
             gameBoard: board,
+
             marker: marker === "X" ? 1 : 2,
             position: position
         };                
@@ -61,7 +62,10 @@
                         }
                         var boardJson = $("#boardPlaceholder").val();
                         var nBoard = JSON.parse(boardJson);
-                        nBoard.spaces[position] = ticTacToe.currentPlayer;
+                        nBoard.spaces[position] = {
+                            Marker: ticTacToe.currentPlayer,
+                            Number: position
+                        };
                         $("#boardPlaceholder").val(JSON.stringify(nBoard));
                         ticTacToe.nextPlayer();                                                
                         break;

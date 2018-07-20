@@ -24,11 +24,11 @@ namespace TicTacJoe.Engine
     {
         public int GetNextMove(Board boardState, Marker marker)
         {
-            int[] spacesLeft = new int[boardState.Spaces.Count(x => x == Marker.Empty)];
+            int[] spacesLeft = new int[boardState.Spaces.Count(x => x.Marker == Marker.Empty)];
 
-            for (int i = 0; i < boardState.Spaces.Count(x => x == Marker.Empty); i++)
+            for (int i = 0; i < boardState.Spaces.Count(x => x.Marker == Marker.Empty); i++)
             {
-                spacesLeft[i] = boardState.Spaces.ToList().IndexOf(boardState.Spaces.Where(x => x == Marker.Empty).ToArray()[i]);
+                spacesLeft[i] = boardState.Spaces.ToList().IndexOf(boardState.Spaces.Where(x => x.Marker == Marker.Empty).ToArray()[i]);
             }
             Random random = new Random();            
             return spacesLeft[random.Next(spacesLeft.Length)];

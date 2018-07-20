@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicTacJoe.Engine;
+using TicTacToe;
 using TicTacToe.Enums;
 
 namespace TicTacTests
@@ -16,16 +17,16 @@ namespace TicTacTests
             var wallE = new Wall_E_Engine();
             int moves = 0;
             //Play the first row
-            state = gameBoard.Play(Marker.X, moves);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = moves });
             while (state == GameState.Playing && moves < 9)
             {
                 moves++;
                 int aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                state = gameBoard.Play(Marker.O, aIMove);
+                state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove });
                 while (state == GameState.InvalidMove)
                 {
                     aIMove = wallE.GetNextMove(gameBoard, Marker.O);
-                    state = gameBoard.Play(Marker.O, aIMove);
+                    state = gameBoard.Play(new Space { Marker = Marker.O, Number = aIMove });
                 }                
             }
 

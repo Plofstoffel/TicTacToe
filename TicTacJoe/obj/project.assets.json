@@ -680,23 +680,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shaun\\.nuget\\packages\\": {},
+    "C:\\Users\\speusschers\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj",
+      "projectUniqueName": "C:\\Development\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj",
       "projectName": "TicTacJoe",
-      "projectPath": "C:\\Repos\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj",
-      "packagesPath": "C:\\Users\\Shaun\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\TicTacToe\\TicTacJoe\\obj\\",
+      "projectPath": "C:\\Development\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj",
+      "packagesPath": "C:\\Users\\speusschers\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\TicTacToe\\TicTacJoe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Shaun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\speusschers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -709,8 +709,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Repos\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-              "projectPath": "C:\\Repos\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+            "C:\\Development\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+              "projectPath": "C:\\Development\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
             }
           }
         }

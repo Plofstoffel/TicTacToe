@@ -9,3 +9,14 @@ C:\Repos\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.AssemblyInfoInput
 C:\Repos\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.AssemblyInfo.cs
 C:\Repos\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.dll
 C:\Repos\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.pdb
+C:\Development\TicTacToe\TicTacWeb\bin\Debug\netcoreapp2.0\TicTacWeb.deps.json
+C:\Development\TicTacToe\TicTacWeb\bin\Debug\netcoreapp2.0\TicTacWeb.runtimeconfig.json
+C:\Development\TicTacToe\TicTacWeb\bin\Debug\netcoreapp2.0\TicTacWeb.runtimeconfig.dev.json
+C:\Development\TicTacToe\TicTacWeb\bin\Debug\netcoreapp2.0\TicTacWeb.dll
+C:\Development\TicTacToe\TicTacWeb\bin\Debug\netcoreapp2.0\TicTacWeb.pdb
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.csprojAssemblyReference.cache
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.csproj.CoreCompileInputs.cache
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.AssemblyInfoInputs.cache
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.AssemblyInfo.cs
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.dll
+C:\Development\TicTacToe\TicTacWeb\obj\Debug\netcoreapp2.0\TicTacWeb.pdb

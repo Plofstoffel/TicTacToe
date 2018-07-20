@@ -4,19 +4,29 @@ using TicTacToe.Enums;
 
 namespace TicTacToe
 {
-    public class Board : IBoard
+    public class Board
     {
-        private Marker[] _spaces;
+        private Space[] _spaces;
         private Marker _winner;
 
-        public Marker[] Spaces
+        public Space[] Spaces
         {
             get
             {
                 if (_spaces == null)
                 {
-                    _spaces = new Marker[9];
-
+                    _spaces = new Space[9]
+                    {
+                        new Space{ Number = 0, Marker = Marker.Empty },
+                        new Space{ Number = 1, Marker = Marker.Empty },
+                        new Space{ Number = 2, Marker = Marker.Empty },
+                        new Space{ Number = 3, Marker = Marker.Empty },
+                        new Space{ Number = 4, Marker = Marker.Empty },
+                        new Space{ Number = 5, Marker = Marker.Empty },
+                        new Space{ Number = 6, Marker = Marker.Empty },
+                        new Space{ Number = 7, Marker = Marker.Empty },
+                        new Space{ Number = 8, Marker = Marker.Empty }
+                    };
                 }
                 return _spaces;
             }
@@ -42,31 +52,31 @@ namespace TicTacToe
             }
         }
 
-        public IBoard Clone()
+        public Board Clone()
         {
             Board b = new Board();
-            b.Spaces = (Marker[])Spaces.Clone();
-            return (IBoard)b;
+            b.Spaces = (Space[])Spaces.Clone();
+            return b;
         }
 
-        public GameState GetGameState()
+        private GameState GetGameState()
         {
             for (int i = 0; i < 3; i++)
             {
                 if (
-                    ((Spaces[i * 3] != Marker.Empty && Spaces[(i * 3)] == Spaces[(i * 3) + 1] && Spaces[(i * 3)] == Spaces[(i * 3) + 2]) ||
-                     (Spaces[i] != Marker.Empty && Spaces[i] == Spaces[i + 3] && Spaces[i] == Spaces[i + 6])))
+                    ((Spaces[i * 3].Marker != Marker.Empty && Spaces[(i * 3)].Marker == Spaces[(i * 3) + 1].Marker && Spaces[(i * 3)].Marker == Spaces[(i * 3) + 2].Marker) ||
+                     (Spaces[i].Marker != Marker.Empty && Spaces[i].Marker == Spaces[i + 3].Marker && Spaces[i].Marker == Spaces[i + 6].Marker)))
                 {
                     return GameState.Winner;
                 }
             }
 
-            if ((Spaces[0] != Marker.Empty && Spaces[0] == Spaces[4] && Spaces[0] == Spaces[8]) || (Spaces[2] != Marker.Empty && Spaces[2] == Spaces[4] && Spaces[2] == Spaces[6]))
+            if ((Spaces[0].Marker != Marker.Empty && Spaces[0].Marker == Spaces[4].Marker && Spaces[0].Marker == Spaces[8].Marker) || (Spaces[2].Marker != Marker.Empty && Spaces[2].Marker == Spaces[4].Marker && Spaces[2].Marker == Spaces[6].Marker))
             {
                 return GameState.Winner;
             }
 
-            if (Spaces.Count(x => x == Marker.Empty) == 0)
+            if (Spaces.Count(x => x.Marker == Marker.Empty) == 0)
             {
                 return GameState.Tie;
             }
@@ -74,20 +84,20 @@ namespace TicTacToe
             return GameState.Playing;
         }
 
-        public bool PlaceMarker(Marker marker, int space)
+        private bool PlaceMarker(Space space)
         {
-            if (Spaces[space] != Marker.Empty)
+            if (Spaces[space.Number]!= null && Spaces[space.Number].Marker != Marker.Empty)
             {
                 return false;
             }
 
-            Spaces[space] = marker;
+            Spaces[space.Number] = space;
             return true;
         }
 
-        public GameState Play(Marker marker, int space)
+        public GameState Play(Space space)
         {
-            var isValidMove = PlaceMarker(marker, space);
+            var isValidMove = PlaceMarker(space);
             if (!isValidMove)
             {
                 return GameState.InvalidMove;

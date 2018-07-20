@@ -5729,23 +5729,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shaun\\.nuget\\packages\\": {},
+    "C:\\Users\\speusschers\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\TicTacToe\\TicTacTests\\TicTacTests.csproj",
+      "projectUniqueName": "C:\\Development\\TicTacToe\\TicTacTests\\TicTacTests.csproj",
       "projectName": "TicTacTests",
-      "projectPath": "C:\\Repos\\TicTacToe\\TicTacTests\\TicTacTests.csproj",
-      "packagesPath": "C:\\Users\\Shaun\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\TicTacToe\\TicTacTests\\obj\\",
+      "projectPath": "C:\\Development\\TicTacToe\\TicTacTests\\TicTacTests.csproj",
+      "packagesPath": "C:\\Users\\speusschers\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\TicTacToe\\TicTacTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Shaun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\speusschers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5758,11 +5758,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Repos\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj": {
-              "projectPath": "C:\\Repos\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj"
+            "C:\\Development\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj": {
+              "projectPath": "C:\\Development\\TicTacToe\\TicTacJoe\\TicTacJoe.csproj"
             },
-            "C:\\Repos\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-              "projectPath": "C:\\Repos\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+            "C:\\Development\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+              "projectPath": "C:\\Development\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
             }
           }
         }

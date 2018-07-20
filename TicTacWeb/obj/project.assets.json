@@ -12662,23 +12662,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shaun\\.nuget\\packages\\": {},
+    "C:\\Users\\speusschers\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\TicTacToe\\TicTacWeb\\TicTacWeb.csproj",
+      "projectUniqueName": "C:\\Development\\TicTacToe\\TicTacWeb\\TicTacWeb.csproj",
       "projectName": "TicTacWeb",
-      "projectPath": "C:\\Repos\\TicTacToe\\TicTacWeb\\TicTacWeb.csproj",
-      "packagesPath": "C:\\Users\\Shaun\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\TicTacToe\\TicTacWeb\\obj\\",
+      "projectPath": "C:\\Development\\TicTacToe\\TicTacWeb\\TicTacWeb.csproj",
+      "packagesPath": "C:\\Users\\speusschers\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\TicTacToe\\TicTacWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Shaun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\speusschers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

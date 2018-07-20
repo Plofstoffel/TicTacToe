@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TicTacToe;
 using TicTacToe.Enums;
 
 namespace TicTacTests
@@ -21,10 +22,10 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
             //Play the first X on 4
-            state = gameBoard.Play(Marker.X, 4);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 4 });
 
             //Try and play space 4 again
-            state = gameBoard.Play(Marker.X, 4);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 4 });
 
             Assert.IsTrue(state == GameState.InvalidMove);
         }
@@ -35,9 +36,9 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 0);
-            state = gameBoard.Play(Marker.O, 3);
-            state = gameBoard.Play(Marker.X, 1);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 0 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 1 });
 
             Assert.IsTrue(state == GameState.Playing);
         }
@@ -48,11 +49,11 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 0);
-            state = gameBoard.Play(Marker.O, 3);
-            state = gameBoard.Play(Marker.X, 1);
-            state = gameBoard.Play(Marker.O, 7);
-            state = gameBoard.Play(Marker.X, 2);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 0 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 1 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 7 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 2 });
 
             Assert.IsTrue(state == GameState.Winner);
         }
@@ -63,11 +64,11 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 3);
-            state = gameBoard.Play(Marker.O, 0);
-            state = gameBoard.Play(Marker.X, 4);
-            state = gameBoard.Play(Marker.O, 1);
-            state = gameBoard.Play(Marker.X, 5);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 0 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 4 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 1 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 5 });
 
             Assert.IsTrue(state == GameState.Winner);
         }
@@ -78,11 +79,11 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 6);
-            state = gameBoard.Play(Marker.O, 3);
-            state = gameBoard.Play(Marker.X, 7);
-            state = gameBoard.Play(Marker.O, 2);
-            state = gameBoard.Play(Marker.X, 8);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 6 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 7 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 2 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 8 });
 
             Assert.IsTrue(state == GameState.Winner);
         }
@@ -93,11 +94,11 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 0);
-            state = gameBoard.Play(Marker.O, 3);
-            state = gameBoard.Play(Marker.X, 4);
-            state = gameBoard.Play(Marker.O, 7);
-            state = gameBoard.Play(Marker.X, 8);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 0 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 4 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 7 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 8 });
 
             Assert.IsTrue(state == GameState.Winner);
         }
@@ -108,11 +109,11 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 2);
-            state = gameBoard.Play(Marker.O, 3);
-            state = gameBoard.Play(Marker.X, 4);
-            state = gameBoard.Play(Marker.O, 7);
-            state = gameBoard.Play(Marker.X, 6);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 2 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 4 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 7 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 6 });
 
             Assert.IsTrue(state == GameState.Winner);
         }
@@ -123,15 +124,15 @@ namespace TicTacTests
             var gameBoard = new TicTacToe.Board();
             GameState state;
 
-            state = gameBoard.Play(Marker.X, 0);
-            state = gameBoard.Play(Marker.O, 1);
-            state = gameBoard.Play(Marker.X, 2);
-            state = gameBoard.Play(Marker.O, 4);
-            state = gameBoard.Play(Marker.X, 3);
-            state = gameBoard.Play(Marker.O, 5);
-            state = gameBoard.Play(Marker.X, 7);
-            state = gameBoard.Play(Marker.O, 6);
-            state = gameBoard.Play(Marker.X, 8);
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 0 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 1 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 2 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 4 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 3 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 5 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 7 });
+            state = gameBoard.Play(new Space { Marker = Marker.O, Number = 6 });
+            state = gameBoard.Play(new Space { Marker = Marker.X, Number = 8 });
 
             Assert.IsTrue(state == GameState.Tie);
         }
