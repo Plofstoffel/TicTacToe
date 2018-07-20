@@ -12,4 +12,4 @@ Tic Tac Toe using .net Core 2.0
   <li>TicTacWeb: Web app to play the game on.</li>  
 </ul>
 
-Todo: Finnish and impliment the AI (Watch out for Skynet, she has MiniMax!!)
+Todo: Complete and implement the AI (Watch out for Skynet, she has MiniMax!!)
